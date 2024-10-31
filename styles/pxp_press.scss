@@ -1,0 +1,130 @@
+pre {
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 95%;
+    line-height: 140%;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+}
+
+code {
+    background-color: #d1d2d4;
+    border: 1px solid #bebab0;
+    display: inline-block;
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 95%;
+    line-height: 140%;
+    padding: 0.5em 1em;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+}
+
+#wpcontent {
+  padding-left: 0 !important;
+}
+
+.pxp-nav {
+  &-menu {
+    margin: 0;
+    padding: 0 20px;
+    & li {
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e6e7e8;
+      border: 2px solid #d1d2d4;
+      border-bottom: 0;
+      color: #808285;
+      font-family: "PT Sans", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 5px;
+      height: 40px;
+      text-align: center;
+      vertical-align: bottom;
+      width: 115px;
+
+      &.active {
+        background-color: #d1d2d4;
+        cursor: default;
+      }
+    }
+  }
+
+  &__separator {
+    border: 0; // Reset the default hr borders
+    border-top: 2px solid#d1d2d4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.pxp-form-button {
+  margin-top: 15px !important;
+  &--right {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.pxp-button-container {
+  max-width: 574px;
+  position: relative;
+}
+
+.pxp-header {
+  position: relative;
+  &__background {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  &__logo {
+    &-background {
+      background-color: rgba(0, 0, 0, 0.8);
+      display: inline-block;
+      padding: 20px 25px 10px 25px;
+      margin-left: 20px;
+      @media (max-width: 639px) {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.pxp-content-container {
+  padding-left: 20px;
+  @media (max-width: 639px) {
+    padding-left: 10px;
+  }
+}
+
+.pxp-about {
+  box-sizing: border-box;
+  padding: 0 35px;
+
+  &__logo {
+    margin: 30px 0;
+  }
+  &__paragraph {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #757679;
+  }
+  &__contact {
+    margin-top: 45px;
+
+    &--bold {
+      font-weight: 700;
+    }
+
+    & p {
+      color: #757679;
+      margin: 0;
+    }
+  }
+}
